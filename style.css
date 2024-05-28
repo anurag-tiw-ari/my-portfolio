@@ -1,1 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* base rule  */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:"Jost",sans-serif;
+}
+html{
+   font-size: 62.5%;
+}
+h1,h2,h3,h4,h5,h6
+{
+    font-family: "Poppins",sans-serif;
+}
+/*theme*/
+:root{
+    --main-color:#a2a2a2;
+    --supporting-color:#cecece;
+    --font-color:#424242;
+    --bg-color:#f7fcff;
+    --heading-color:#000a19;
+    --para-color:#504e4d;
+    --white-color:white;
+    --h-color:#003b99;
+    --btn-hover-bg-color:#003b99;
+    --btn-box-shadow:rgba(100,100,111,0.2) 0px 7px 29px 0px;
+    --footer-bg-color:#040d12;
+}
+
+/* layout */
+.container
+{
+   max-width:108rem;
+   margin:0 auto;
+   padding: 9.6rem 2.4rem;
+}
+
+p,li,a,label{
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+    color:var(--para-color);
+    line-height: 1.5;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+/*reusable*/
+/*states*/
