@@ -65,9 +65,13 @@ li{
 .navbar-right--side a:hover
 {
     border-radius: 0.5rem;
-    box-shadow: rgba(0, 0, 0, 0.9) 0px 1px 4px;
-    color: var(--hover-color);
+    
+    color: rgb(255, 255, 255);
 }
+.hero-para:hover{
+    color:white;
+}
+
 
 
 /* Navigation Bar Start */
@@ -103,11 +107,10 @@ li{
 /* Hero Section starts*/
 main
 {
-    background-image: linear-gradient(270deg,#5799b1,#bdffdb);
+    background-image: linear-gradient(90deg,#5799b1,#bdffdb);
     position: relative;
     top:-8rem;
     z-index: -1;
-    height: 100vh;
     background-attachment: fixed;
 }
 
@@ -118,13 +121,11 @@ main
     margin-top: 17rem;
 }
 .grid-two--cols img{
-    width: 350px;
-    height: 350px;
+    width: 35rem;
+    height: 35rem;
     background-color: transparent;
     border-radius: 50%;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-   
-    transition: all 0.3s linear ;
 }
 
 .section-hero--content{
@@ -132,12 +133,19 @@ main
     
 }
 .hero-subheading{
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1.8rem;
 }
 
 .hero-para{
     text-align: justify;
+    color: rgb(53, 53, 53);
+    background: rgba(255, 255, 255, 0.15); /* Semi-transparent background */
+    border-radius: 15px; /* Rounded corners */
+    padding: 3rem;
+    backdrop-filter: blur(5px); /* Frosted glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Border to enhance the effect */
+    
 }
 .section-hero--content .hero-heading{
     color: transparent;
@@ -145,12 +153,12 @@ main
     font-size: 4rem;
     position: relative;
     margin-bottom: 5rem;
-    font-weight: 900;
+    font-weight: 800;
 }
 .section-hero--content .hero-heading:after
 {
     content:"ANURAG TIWARI";
-    color: rgb(0, 59, 95);
+    color: #eff0f0;
     position: absolute;
     overflow: hidden;
     animation-name: myname;
@@ -172,3 +180,6 @@ main
     }
 }
 /* Hero section ends*/
+
+/* Education Section Starts*/
+/* Education Section ends*/
