@@ -182,4 +182,94 @@ main
 /* Hero section ends*/
 
 /* Education Section Starts*/
+
+.section-education{
+    background-image: url('education-school-pattern-design_260839-1.avif');
+    margin-top: -8rem;
+    opacity: 0.6;
+    background-attachment: fixed;
+}
+
+.section-education .about-education{
+    display: flex;
+    justify-content: center;
+    gap:3rem;
+}
+
+.container-line{
+    width: 3rem;
+    height: auto;
+    background-color: #29c4dc;
+    border-radius:0.5rem;
+    position: relative;
+}
+.container-line .circle1{
+    width:3rem;
+    height: 3rem;
+    background-color: #12e06f;
+    border-radius: 50%;
+    position: absolute;
+    top:20%;
+    right:-50%;
+}
+
+.container-line .circle2{
+    width:3rem;
+    height: 3rem;
+    background-color: #12e06f;
+    border-radius: 50%;
+    position: absolute;
+    top:50%;
+    right:-50%;
+}
+
+.container-line .circle3{
+    width:3rem;
+    height: 3rem;
+    background-color: #12e06f;
+    border-radius: 50%;
+    position: absolute;
+    top:80%;
+    right:-50%;
+}
+
+.container-edu{
+    display: flex;
+    flex-direction: column;
+}
+.edu-div{
+    background-color: #040d12;
+    padding:2rem 4rem;
+    border-radius: 1.5rem;
+}
+.classX
+{
+   margin-top: 9rem;
+   
+}
+.classXII{
+    margin-top: 7rem;
+}
+
+.btech{
+    margin-top: 6rem;
+}
+.common-heading--edu{
+    color: #eff0f0;
+    margin-bottom: 1rem;
+}
+
+.common-para--edu{
+    color:rgb(195, 194, 194);
+}
+
+.section-education .container .main-heading{
+    font-size: 4rem;
+    word-spacing: 2rem;
+    font-weight: 700;
+    color:#000a19;
+}
+.section-education .container-main{
+    padding:3.6rem 2.4rem;
+}
 /* Education Section ends*/
