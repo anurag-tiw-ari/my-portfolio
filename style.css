@@ -9,6 +9,7 @@
 }
 html{
    font-size: 62.5%;
+   scroll-behavior: smooth;
 }
 h1,h2,h3,h4,h5,h6
 {
@@ -21,7 +22,7 @@ h1,h2,h3,h4,h5,h6
     --font-color:#424242;
     --bg-color:#f7fcff;
     --heading-color:#000a19;
-    --para-color:#504e4d;
+    --para-color:rgb(46, 46, 46);
     --white-color:white;
     --h-color:#003b99;
     --btn-hover-bg-color:#003b99;
@@ -95,8 +96,7 @@ li{
 .navbar-right--side a{
     display: inline-block;
     padding: 0.5rem 0.5rem;
-    font-size: 1.4rem;
-    color: rgb(81, 81, 81);
+    font-size: 1.5rem;
     font-weight: 600;
 }
 .navbar-left--side a{
@@ -107,7 +107,7 @@ li{
 /* Hero Section starts*/
 main
 {
-    background-image: linear-gradient(90deg,#5799b1,#bdffdb);
+    background-image: linear-gradient(225deg,#2f86ab 20%,#63faa7);
     position: relative;
     top:-8rem;
     z-index: -1;
@@ -126,6 +126,7 @@ main
     background-color: transparent;
     border-radius: 50%;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    filter: brightness(0.7);
 }
 
 .section-hero--content{
@@ -135,16 +136,19 @@ main
 .hero-subheading{
     font-weight: 600;
     font-size: 1.8rem;
+    color: rgb(255, 255, 255);
 }
 
 .hero-para{
     text-align: justify;
-    color: rgb(53, 53, 53);
+    color: rgb(32, 32, 32);
     background: rgba(255, 255, 255, 0.15); /* Semi-transparent background */
     border-radius: 15px; /* Rounded corners */
     padding: 3rem;
     backdrop-filter: blur(5px); /* Frosted glass effect */
     border: 1px solid rgba(255, 255, 255, 0.3); /* Border to enhance the effect */
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    /*box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;*/
     
 }
 .section-hero--content .hero-heading{
@@ -158,7 +162,8 @@ main
 .section-hero--content .hero-heading:after
 {
     content:"ANURAG TIWARI";
-    color: #eff0f0;
+    background: linear-gradient(270deg, #000000FC 0%, #3b3b3b 50%, #000000 100%);
+    background-clip: text;
     position: absolute;
     overflow: hidden;
     animation-name: myname;
@@ -179,97 +184,109 @@ main
     width: 100%;
     }
 }
+
+
 /* Hero section ends*/
 
 /* Education Section Starts*/
 
 .section-education{
-    background-image: url('education-school-pattern-design_260839-1.avif');
+    background-image:  
+    url('education-school-pattern-design_260839-1.avif');
+    opacity: 0.9;
     margin-top: -8rem;
-    opacity: 0.6;
     background-attachment: fixed;
-}
-
-.section-education .about-education{
-    display: flex;
-    justify-content: center;
-    gap:3rem;
-}
-
-.container-line{
-    width: 3rem;
-    height: auto;
-    background-color: #29c4dc;
-    border-radius:0.5rem;
     position: relative;
 }
-.container-line .circle1{
-    width:3rem;
-    height: 3rem;
-    background-color: #12e06f;
-    border-radius: 50%;
+.custom-shape-divider-bottom-1716958659 {
     position: absolute;
-    top:20%;
-    right:-50%;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
 }
 
-.container-line .circle2{
-    width:3rem;
-    height: 3rem;
-    background-color: #12e06f;
-    border-radius: 50%;
-    position: absolute;
-    top:50%;
-    right:-50%;
+.custom-shape-divider-bottom-1716958659 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 112px;
 }
 
-.container-line .circle3{
-    width:3rem;
-    height: 3rem;
-    background-color: #12e06f;
-    border-radius: 50%;
-    position: absolute;
-    top:80%;
-    right:-50%;
+.custom-shape-divider-bottom-1716958659 .shape-fill {
+    fill: #4392b3;
 }
 
-.container-edu{
-    display: flex;
-    flex-direction: column;
+.container-edu {
+    position: relative;
+    margin-bottom: 15rem;
 }
+
+.container-edu::after {
+    content: '';
+    position: absolute;
+    width: 2rem;
+    background-color: rgb(0, 170, 255);
+    top: 0;
+    bottom: 0;
+    left: 3rem;
+    margin-left: -3px;
+    border-radius: 1rem;
+}
+.edu-div {
+    position: relative;
+    margin-left: 6rem;
+    margin-top: 10rem;
+}
+
+.edu-div::after {
+    content: '';
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    left: -4rem;
+    background-color: white;
+    border: 4px solid #04b353;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+
 .edu-div{
-    background-color: #040d12;
+    background-color: #006d45;
     padding:2rem 4rem;
     border-radius: 1.5rem;
-}
-.classX
-{
-   margin-top: 9rem;
-   
-}
-.classXII{
-    margin-top: 7rem;
+    width: 80%;
 }
 
-.btech{
-    margin-top: 6rem;
-}
 .common-heading--edu{
     color: #eff0f0;
     margin-bottom: 1rem;
 }
 
 .common-para--edu{
-    color:rgb(195, 194, 194);
+    color:rgb(216, 216, 216);
 }
 
 .section-education .container .main-heading{
     font-size: 4rem;
     word-spacing: 2rem;
     font-weight: 700;
-    color:#000a19;
+    color:var(--heading-color);
 }
 .section-education .container-main{
-    padding:3.6rem 2.4rem;
+    padding:3.6rem 2.4rem 0 2.4rem;
 }
 /* Education Section ends*/
+
+/*Skill Section Starts */
+
+.section-skill{
+    background-color: #559dba;
+    height: 100vh;
+}
+
+/*Skill section ends */
