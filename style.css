@@ -152,17 +152,20 @@ main
     border: 1px solid rgba(255, 255, 255, 0.3); /* Border to enhance the effect */
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     /*box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;*/
+    font-size: 1.4rem;
     
 }
-.section-hero--content .hero-heading{
+.section-hero--content .hero-heading span{
     color: transparent;
     letter-spacing: 0.4rem;
     font-size: 4rem;
     position: relative;
     margin-bottom: 5rem;
     font-weight: 800;
+    overflow: hidden;
+    display: inline-block;
 }
-.section-hero--content .hero-heading:after
+.section-hero--content .hero-heading span:after
 {
     content:"ANURAG TIWARI";
     background: linear-gradient(270deg, #000000FC 0%, #3b3b3b 50%, #000000 100%);
@@ -326,10 +329,15 @@ main
     background-color: antiquewhite;
     padding: 2rem 4rem;
     border-radius:0.5rem;
+    transition: all 0.2s;
 }
 
 .section-skill .grid{
     gap:6rem;
+}
+
+.skills-div:hover{
+   scale:1.05;
 }
 
 
@@ -427,3 +435,96 @@ input{
 
 
 /* Responsive  starts*/
+
+@media (width<=875px)
+{
+   .grid-two--cols img{
+    width:30rem;
+    height: 30rem;
+    html{
+        font-size: 56.25%;
+    }
+   }
+}
+@media (width<=835px){
+
+    html{
+        font-size: 56.25%;
+    }
+    
+    .grid-two--cols img{
+     width:30rem;
+     height: 30rem;
+    }
+
+ }
+
+ @media (width<=773px)
+ {
+    html{
+        font-size: 56.25%;
+    }
+    .grid-three--cols{
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    }
+ }
+
+ @media(width<=752px)
+ {
+    html{
+        font-size: 56.25%;
+    }
+    .grid-two--cols{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .grid-two--cols .section-hero--image{
+        order:1;
+        
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+        
+    }
+    .grid-two--cols .section-hero--content{
+        order:2;
+        margin-top: 3rem;
+
+        & .hero-heading{
+            text-align: center;
+        }
+
+        & .hero-subheading{
+            text-align: center;
+        }
+        
+    }
+
+
+    .section-navbar .container
+    {
+        flex-direction: column;
+        margin-top: -2rem;
+
+        & .navbar-right--side{
+            margin-top:1rem;
+        }
+        & .navbar-left--side{
+            margin-top:1rem;
+        }
+    }
+
+    .contact-form .contact-heading{
+        margin-bottom: 2rem;
+    }
+ }
+ @media (width<450px){
+    html{
+        font-size: 50%;
+    }
+ }
+ @media (width<390px){
+    html{
+        font-size: 43%;
+    }
+ }
