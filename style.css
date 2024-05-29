@@ -358,4 +358,72 @@ main
 /* Contact Section Starts */
 
 
+.contact-form{
+    width: 60%;
+    margin: 0 auto;
+    box-shadow:rgba(60,64,67,0.3) 0px 1px 2px 0px, rgba(60,64,67,0.15) 0px 2px 6px 2px;
+    border-radius:0.5rem;
+    background-color: rgb(235, 235, 222);
+    padding:2rem 5rem;
+    
+}
+.mb-3{
+    margin-bottom: 3.2rem;
+}
+
+label{
+    text-transform: capitalize;
+}
+
+input{
+    width:90%;
+    padding:1.4rem 2.4rem;
+}
+
+.contact-form .contact-heading{
+    text-align: center;
+    font-size:2rem;
+    color: var(--heading-color);
+}
+
+.section-contact .container{
+    padding:5rem 2.4rem;
+}
+
 /* Contact Section ends */
+
+/* Footer Section Starts*/
+
+.section-footer{
+    background-color: var(--footer-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 40rem;
+    position: relative;
+    margin-top: -25rem;
+    z-index: -1;
+}
+
+.footer-icons i{
+    background-color: whitesmoke;
+    margin-bottom: 4rem;
+    font-size: 3rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+}
+/* Footer Section Ends*/
+
+
+/* Responsive  starts*/
