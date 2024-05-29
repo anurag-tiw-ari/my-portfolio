@@ -59,6 +59,9 @@ li{
 .grid-two--cols{
     grid-template-columns: repeat(2,1fr);
 }
+.grid-three--cols{
+    grid-template-columns: repeat(3,1fr);
+}
 
 /*reusable*/
 
@@ -277,7 +280,7 @@ main
     font-weight: 700;
     color:var(--heading-color);
 }
-.section-education .container-main{
+.container-main{
     padding:3.6rem 2.4rem 0 2.4rem;
 }
 /* Education Section ends*/
@@ -286,7 +289,48 @@ main
 
 .section-skill{
     background-color: #559dba;
-    height: 100vh;
 }
+
+.section-skill .container-main
+{
+    font-size: 4rem;
+    word-spacing: 2rem;
+    font-weight: 700;
+    color:rgb(245, 245, 212);
+
+}
+
+.skills-div i{
+    font-size: 3rem;
+    background-color:  #1e1e1e;
+    border-radius:50%;
+    height: 6rem;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#ffffff;
+    margin-bottom: 2rem;
+}
+.skill-common--heading{
+    color: var(--heading-color);
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+.skill-common--para{
+    font-size: 1.4rem;
+    color:#040d12
+}
+
+.skills-div{
+    background-color: antiquewhite;
+    padding: 2rem 4rem;
+    border-radius:0.5rem;
+}
+
+.section-skill .grid{
+    gap:6rem;
+}
+
 
 /*Skill section ends */
