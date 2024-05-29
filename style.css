@@ -334,3 +334,28 @@ main
 
 
 /*Skill section ends */
+
+/* Project Section Starts */
+
+.section-project
+{
+    background-color: #04b353;
+    height: 30rem;
+    text-align: center;
+    padding-top: 10rem;
+    font-size: 3rem;
+    font-weight: 900;
+    color: bisque;
+
+    & span{
+        font-size: 4rem;
+        margin-bottom:4rem;
+    }
+}
+
+/* Project Section Ends */
+
+/* Contact Section Starts */
+
+
+/* Contact Section ends */
