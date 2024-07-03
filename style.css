@@ -772,7 +772,7 @@ input{
     margin-bottom: 15rem;
 }
 
-.container-edu::after {
+.active .container-edu::after {
     content: '';
     position: absolute;
     width: 2rem;
@@ -789,7 +789,7 @@ input{
     margin-top: 10rem;
 }
 
-.edu-div::after {
+.active .edu-div::after {
     content: '';
     position: absolute;
     width: 2.5rem;
@@ -803,7 +803,7 @@ input{
 }
 
 
-.edu-div{
+.active .edu-div{
     background-color: #111111;
     padding:2rem 4rem;
     border-radius: 1.5rem;
@@ -833,7 +833,7 @@ input{
 
 /*Skill Section Starts */
 
-.section-skill{
+.active .section-skill{
     background-color: #191919;
 }
 
@@ -942,5 +942,51 @@ input{
     padding:5rem 2.4rem;
 }
 
+.active .section-contact{
+    background-color: #000000;
+}
+  /*  background-image: url("https://www.nawpic.com/media/2020/batman-nawpic-1-scaled.jpg");
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;   */
+
 /* Contact Section ends */
+/* Footer Section Starts*/
+
+.active .section-footer{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 50rem;
+    position: relative;
+    margin-top: 0;
+    /*z-index: -1;*/
+    background-image: url("https://wallpaper.dog/large/20539390.jpg");
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.footer-icons i{
+    background-color: whitesmoke;
+    margin-bottom: 4rem;
+    font-size: 3rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+}
+/* Footer Section Ends*/
 
