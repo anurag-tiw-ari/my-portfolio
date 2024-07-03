@@ -107,6 +107,34 @@ li{
 }
 /* Navigation Bar Ends */
 
+.toggle {
+    display:flex;
+    gap:3px;
+    align-items:center;
+}
+.toggle .capsule
+{
+    width:60px;
+    background-color:rgb(22, 22, 22);
+    display:flex;
+    justify-content:start;
+    padding:1px;
+    border-radius:15px;
+    align-items:center;
+}
+.toggle .circle
+{
+    border-radius:50%;
+    background-color:#50ffe2;
+    width:20px;
+    height:20px;
+}
+.toggle .text 
+{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
 /* Hero Section starts*/
 main
 {
@@ -115,6 +143,7 @@ main
     top:-8rem;
     z-index: -1;
     background-attachment: fixed;
+    height:100vh;
 }
 
 
@@ -508,6 +537,7 @@ input{
 
         & .navbar-right--side{
             margin-top:1rem;
+            margin-bottom:1rem;
         }
         & .navbar-left--side{
             margin-top:1rem;
@@ -528,3 +558,159 @@ input{
         font-size: 43%;
     }
  }
+
+
+ /* THEME CHANGE */
+
+ /* TOGGLE BUTTON Start */
+
+ .active .toggle{
+    display:flex;
+    gap:3px;
+    align-items:center;
+}
+.active .toggle .capsule
+{
+    width:60px;
+    background-color:white;
+    display:flex;
+    justify-content:end;
+    padding:1px;
+    border-radius:15px;
+    align-items:center;
+   /* background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/05/Batman-Logo-Wallpaper-Full-Download.jpg");*/
+}
+.active .toggle .circle
+{
+    border-radius:50%;
+    background-color: rgb(0, 0, 0);
+    width:20px;
+    height:20px;
+}
+.active .toggle .text 
+{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: white;
+}
+
+/* TOGGLE BUTTON END */
+
+/* Navigation Bar Start */
+.active .section-navbar
+{
+   width:100%;
+   box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 4px;
+   background-color: #000a19;
+}
+.section-navbar .container{
+    display: flex;
+    justify-content: space-between;
+    padding:1rem 2rem 1rem 2rem;
+    align-items: center;
+}
+.navbar-right--side ul{
+    display: flex;
+    justify-content: space-evenly;
+    gap:1rem;
+}
+
+.active .navbar-right--side a{
+    display: inline-block;
+    padding: 0.5rem 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(212, 207, 207);
+}
+.active .navbar-left--side a{
+    color:#a19e9e;
+}
+/* Navigation Bar Ends */
+
+/* Hero Section starts*/
+.active main
+{
+    background-image: linear-gradient(225deg,#2f86ab 20%,#63faa7);
+    position: relative;
+    top:-8rem;
+    z-index: -1;
+    background-attachment: fixed;
+    height:100vh;
+}
+
+
+.section-hero--image{
+    display: flex;
+    justify-content: end;
+    margin-top: 17rem;
+}
+.grid-two--cols img{
+    width: 35rem;
+    height: 35rem;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    filter: brightness(0.7);
+}
+
+.section-hero--content{
+    margin-top: 15rem;
+    
+}
+.hero-subheading{
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: rgb(255, 255, 255);
+}
+
+.hero-para{
+    text-align: justify;
+    color: rgb(32, 32, 32);
+    background: rgba(255, 255, 255, 0.15); /* Semi-transparent background */
+    border-radius: 15px; /* Rounded corners */
+    padding: 3rem;
+    backdrop-filter: blur(5px); /* Frosted glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Border to enhance the effect */
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    /*box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;*/
+    font-size: 1.4rem;
+    
+}
+.section-hero--content .hero-heading span{
+    color: transparent;
+    letter-spacing: 0.4rem;
+    font-size: 4rem;
+    position: relative;
+    margin-bottom: 5rem;
+    font-weight: 800;
+    overflow: hidden;
+    display: inline-block;
+}
+.section-hero--content .hero-heading span:after
+{
+    content:"ANURAG TIWARI";
+    background: linear-gradient(270deg, #000000FC 0%, #3b3b3b 50%, #000000 100%);
+    background-clip: text;
+    position: absolute;
+    overflow: hidden;
+    animation-name: myname;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    top:0;
+    left:0;
+    white-space: nowrap;
+    font-family: "Poppins";
+}
+
+@keyframes myname
+{
+    0%{
+        width: 0%;
+    }
+    100%{
+    width: 100%;
+    }
+}
+
+
+/* Hero section ends*/
