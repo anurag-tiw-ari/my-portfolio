@@ -114,20 +114,20 @@ li{
 }
 .toggle .capsule
 {
-    width:60px;
+    width:6rem;
     background-color:rgb(22, 22, 22);
     display:flex;
     justify-content:start;
     padding:1px;
-    border-radius:15px;
+    border-radius:1.5rem;
     align-items:center;
 }
 .toggle .circle
 {
     border-radius:50%;
     background-color:#50ffe2;
-    width:20px;
-    height:20px;
+    width:2rem;
+    height:2rem;
 }
 .toggle .text 
 {
@@ -182,6 +182,7 @@ main
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     /*box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;*/
     font-size: 1.4rem;
+    position: relative;
     
 }
 .section-hero--content .hero-heading span{
@@ -295,6 +296,7 @@ main
     padding:2rem 4rem;
     border-radius: 1.5rem;
     width: 80%;
+    position: relative;
 }
 
 .common-heading--edu{
@@ -571,12 +573,12 @@ input{
 }
 .active .toggle .capsule
 {
-    width:60px;
+    width:6rem;
     background-color:white;
     display:flex;
     justify-content:end;
     padding:1px;
-    border-radius:15px;
+    border-radius:1.5rem;
     align-items:center;
    /* background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/05/Batman-Logo-Wallpaper-Full-Download.jpg");*/
 }
@@ -584,8 +586,8 @@ input{
 {
     border-radius:50%;
     background-color: rgb(0, 0, 0);
-    width:20px;
-    height:20px;
+    width:2rem;
+    height:2rem;
 }
 .active .toggle .text 
 {
@@ -620,16 +622,16 @@ input{
     padding: 0.5rem 0.5rem;
     font-size: 1.5rem;
     font-weight: 600;
-    color: rgb(255, 0, 0);
+    color: rgb(220, 217, 217);
 }
 .active .navbar-left--side a{
-    color:#a19e9e;
+    color:#a90606;
 }
 .active .navbar-right--side a:hover
 {
     border-radius: 0.5rem;
     background: rgba(255, 255, 255, 0.15);
-    color: white;
+    color: rgb(255, 0, 0);
 }
 /* Navigation Bar Ends */
 
@@ -661,7 +663,7 @@ input{
     border-radius: 50%;
     box-shadow: rgba(163, 1, 1, 0.25) 0px 30px 60px -12px inset, rgba(255, 255, 255, 0.3) 0px 18px 36px -18px inset;
     filter: brightness(0.8);
-    border: 1px solid rgb(255, 51, 51);
+    border: 2px solid rgb(255, 51, 51);
 }
 
 .section-hero--content{
@@ -810,7 +812,7 @@ input{
     width: 80%;
 }
 
-.common-heading--edu{
+.active .common-heading--edu{
     color: #ff3939;
     margin-bottom: 1rem;
 }
@@ -819,7 +821,7 @@ input{
     color:rgb(216, 216, 216);
 }
 
-.section-education .container .main-heading{
+.active .section-education .container .main-heading{
     font-size: 4rem;
     word-spacing: 2rem;
     font-weight: 700;
@@ -998,4 +1000,42 @@ input{
     gap:2rem;
 }
 /* Footer Section Ends*/
+
+
+/* Intro Video  starts*/
+.videocontainer{
+    height:100vh;
+    width:100%;
+    position: fixed;
+    /*z-index: 99;*/
+}
+.black1{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: black;
+    color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+}
+
+.batmanvideo{
+    object-fit: cover;
+    position: relative;
+    z-index: 48;
+    height: 100%;
+    width: 100%;
+}
+.dynamictext{
+    position: absolute;
+    z-index: 59;
+    top: 120px;
+    left: 37vw;
+    color: white;
+    font-size: 5vw;
+}
+
+/* Intro Video  ends*/
 
