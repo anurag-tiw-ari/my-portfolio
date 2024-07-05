@@ -1007,7 +1007,7 @@ input{
     height:100vh;
     width:100%;
     position: fixed;
-    /*z-index: 99;*/
+    z-index: 99;
 }
 .black1{
     height: 100%;
