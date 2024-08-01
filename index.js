@@ -108,6 +108,34 @@ gsap.from(".hero-para",
     }
 )
 
+//let EduCont=document.querySelector(".container-edu")
+
+gsap.from(".edu-div",{
+    y:90,
+    stagger:0.2,
+    opacity:0,
+    scrollTrigger:{
+        trigger:".edu-div",
+        scroller:"body",
+        markers:true,
+        start:"0% 60%",
+        scrub:2
+    }
+})
+gsap.from(".skills-div",{
+    x:20,
+    stagger:0.15,
+    opacity:0,
+    scrollTrigger:{
+        trigger:".skills-div",
+        scroller:"body",
+        markers:true,
+        start:"0% 60%",
+        end:"200%",
+        scrub:2
+    }
+})
+
 
 
 
