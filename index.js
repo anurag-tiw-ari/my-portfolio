@@ -118,7 +118,7 @@ mm.add("(min-width: 1000px)",()=>{
         scrollTrigger:{
             trigger:".edu-div",
             scroller:"body",
-            markers:true,
+           // markers:true,
             start:"0% 60%",
             scrub:2
         }
@@ -130,7 +130,7 @@ mm.add("(min-width: 1000px)",()=>{
         scrollTrigger:{
             trigger:".skills-div",
             scroller:"body",
-            markers:true,
+           // markers:true,
             start:"0% 60%",
             end:"200%",
             scrub:2
